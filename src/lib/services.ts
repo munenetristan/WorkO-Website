@@ -1,60 +1,3 @@
-<<<<<<< HEAD
-export const defaultServices = [
-  "House Cleaning",
-  "Laundry",
-  "Plumbing Repairs",
-  "Electrical Repairs",
-  "AC Repair",
-  "Appliance Repair",
-  "Handyman Services",
-  "Gardening",
-  "Pest Control",
-  "Carpentry",
-  "Painting",
-  "Moving Help",
-  "Furniture Assembly",
-  "Deep Cleaning",
-  "Office Cleaning",
-  "Car Wash",
-  "Motorcycle Repair",
-  "Mobile Phone Repair",
-  "Computer Repair",
-  "Graphic Design",
-  "Web Development",
-  "Social Media Management",
-  "Photography",
-  "Videography",
-  "Tutoring",
-  "Delivery Rider",
-  "Grocery Shopping",
-  "Event Staffing",
-  "Security Guard",
-  "Childcare",
-  "Elder Care",
-  "Nursing Assistant",
-  "Personal Training",
-  "Makeup Artist",
-  "Hair Styling",
-  "Barber Services",
-  "Tailoring",
-  "Catering",
-  "Baking",
-  "Translation",
-  "Legal Assistant",
-];
-
-export const fallbackCountries = [
-  "All countries",
-  "Kenya",
-  "Nigeria",
-  "Ghana",
-  "South Africa",
-  "Uganda",
-  "Rwanda",
-  "Tanzania",
-  "India",
-  "Philippines",
-=======
 export type ServiceTag = "M" | "W" | "B";
 
 export type ServiceItem = {
@@ -152,5 +95,23 @@ export const serviceLegend = [
   { tag: "M", label: "Male provider available" },
   { tag: "W", label: "Female provider available" },
   { tag: "B", label: "Both available" },
->>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
+] as const;
+
+// Optional: flat list for dropdowns/search
+export const defaultServices = serviceGroups.flatMap((group) =>
+  group.services.map((service) => service.name)
+);
+
+// Optional: fallback list for country selector
+export const fallbackCountries = [
+  "All countries",
+  "Kenya",
+  "Nigeria",
+  "Ghana",
+  "South Africa",
+  "Uganda",
+  "Rwanda",
+  "Tanzania",
+  "India",
+  "Philippines",
 ];
