@@ -3,11 +3,24 @@ import Link from "next/link";
 const quickLinks = [
   { label: "How it Works", href: "/how-it-works" },
   { label: "Services", href: "/services" },
+<<<<<<< HEAD
   { label: "Coverage", href: "/coverage" },
   { label: "Download", href: "/download" },
   { label: "Contact", href: "/contact" },
 ];
 
+=======
+  { label: "Provider Requirements", href: "/provider-requirements" },
+  { label: "Safety", href: "/safety" },
+  { label: "Contact", href: "/contact" },
+];
+
+const legalLinks = [
+  { label: "Terms", href: "/legal/terms" },
+  { label: "Privacy", href: "/legal/privacy" },
+];
+
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
 export default function SiteFooter() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
@@ -16,7 +29,11 @@ export default function SiteFooter() {
           <p className="text-xl font-semibold text-slate-900">WorkO</p>
           <p className="text-sm text-slate-600">
             WorkO is the global piece-job marketplace connecting customers with
+<<<<<<< HEAD
             trusted providers for home, business, and digital services.
+=======
+            verified providers for home, business, and digital services.
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
           </p>
           <p className="text-sm text-slate-500">
             Nairobi · Lagos · Accra · Johannesburg · Remote
@@ -35,12 +52,29 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="space-y-3">
+<<<<<<< HEAD
           <p className="text-sm font-semibold text-slate-900">Get in touch</p>
           <ul className="space-y-2 text-sm text-slate-600">
             <li>hello@worko.com</li>
             <li>+1 (555) 111-2020</li>
             <li>Mon-Fri · 8:00 - 18:00</li>
           </ul>
+=======
+          <p className="text-sm font-semibold text-slate-900">Legal</p>
+          <ul className="space-y-2 text-sm text-slate-600">
+            {legalLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-slate-900">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="pt-3 text-sm text-slate-600">
+            <p>hello@worko.com</p>
+            <p>+1 (555) 111-2020</p>
+          </div>
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
         </div>
       </div>
       <div className="border-t border-slate-200 px-6 py-4 text-center text-xs text-slate-500">

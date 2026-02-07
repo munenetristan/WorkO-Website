@@ -5,10 +5,17 @@ Public marketing site for WorkO, a global piece-job marketplace connecting custo
 ## Features
 
 - Landing page with clear customer and provider CTAs
+<<<<<<< HEAD
 - How it works flows for both customer and provider journeys
 - Services directory (41 services) with optional country filtering
 - Coverage, contact, and download pages
 - SEO metadata and OpenGraph defaults
+=======
+- How it works flows for OTP sign-up, matching, and provider approvals
+- Services directory grouped by category with availability tags
+- Provider requirements, safety, contact, and legal pages
+- SEO metadata and responsive layout
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
 
 ## Tech Stack
 
@@ -32,6 +39,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
+<<<<<<< HEAD
 ## Environment Variables
 
 Create a `.env.local` file from the example if you want to enable live country filtering and service availability.
@@ -58,3 +66,15 @@ npm run start
 ## Deployment
 
 Deploy with any Node.js hosting platform. For Vercel, import the repo and set environment variables in the dashboard.
+=======
+## Build
+
+```bash
+npm run build
+npm run start
+```
+
+## Deployment
+
+Deploy with any Node.js hosting platform. For Vercel, import the repo and set any required environment variables in the dashboard.
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz

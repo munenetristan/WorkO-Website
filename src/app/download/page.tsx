@@ -39,7 +39,11 @@ export default function DownloadPage() {
             WorkO for every device.
           </h1>
           <p className="text-lg text-slate-600">
+<<<<<<< HEAD
             Stay connected with on-demand workers and jobs wherever you are.
+=======
+            Book jobs, chat with providers, and manage payments from your phone.
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
           </p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">

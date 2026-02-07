@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
+<<<<<<< HEAD
     default: "WorkO | On-demand Workers for Every Job",
     template: "%s | WorkO",
   },
@@ -26,14 +27,32 @@ export const metadata: Metadata = {
     title: "WorkO | On-demand Workers for Every Job",
     description:
       "Book vetted workers fast or grow your business as a WorkO provider.",
+=======
+    default: "WorkO | Global piece-job marketplace",
+    template: "%s | WorkO",
+  },
+  description:
+    "WorkO connects customers with trusted providers for home, business, and digital services.",
+  metadataBase: new URL("https://worko.com"),
+  openGraph: {
+    title: "WorkO | Global piece-job marketplace",
+    description:
+      "Book verified workers fast or grow your business as a WorkO provider.",
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
     type: "website",
     url: "https://worko.com",
   },
   twitter: {
     card: "summary_large_image",
+<<<<<<< HEAD
     title: "WorkO | On-demand Workers for Every Job",
     description:
       "Book vetted workers fast or grow your business as a WorkO provider.",
+=======
+    title: "WorkO | Global piece-job marketplace",
+    description:
+      "Book verified workers fast or grow your business as a WorkO provider.",
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
   },
 };
 

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 const customerSteps = [
   {
+<<<<<<< HEAD
     title: "Tell us what you need",
     description: "Pick a service, add details, and choose your preferred time.",
   },
@@ -18,11 +19,32 @@ const customerSteps = [
   {
     title: "Track and pay securely",
     description: "Chat, track arrival, and pay when the job is complete.",
+=======
+    title: "Sign up with OTP",
+    description:
+      "Verify your phone with OTP to access services enabled in your country.",
+  },
+  {
+    title: "Request a service",
+    description:
+      "Share the job details, preferred time, and location-based pricing zone.",
+  },
+  {
+    title: "Get matched instantly",
+    description:
+      "WorkO notifies up to 10 providers within 5km so you can compare options.",
+  },
+  {
+    title: "Track and chat",
+    description:
+      "Follow the provider in real time, chat, and pay the booking fee securely.",
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
   },
 ];
 
 const providerSteps = [
   {
+<<<<<<< HEAD
     title: "Create your profile",
     description: "Share your skills, documents, and service areas.",
   },
@@ -33,6 +55,26 @@ const providerSteps = [
   {
     title: "Grow your income",
     description: "Get paid weekly and build repeat customers with reviews.",
+=======
+    title: "Apply and verify",
+    description:
+      "Upload required documents and complete a background verification.",
+  },
+  {
+    title: "Get approved",
+    description:
+      "Once approved, you appear in customer searches and can accept jobs.",
+  },
+  {
+    title: "Accept work nearby",
+    description:
+      "Receive nearby requests in your service zones and confirm availability.",
+  },
+  {
+    title: "Complete and earn",
+    description:
+      "Finish the job, collect ratings, and receive payouts on schedule.",
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
   },
 ];
 
@@ -54,7 +96,11 @@ export default function HowItWorksPage() {
       </section>
 
       <section className="bg-slate-50">
+<<<<<<< HEAD
         <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-16 md:grid-cols-2">
+=======
+        <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-16 lg:grid-cols-2">
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold text-slate-900">
               For customers
@@ -107,7 +153,11 @@ export default function HowItWorksPage() {
               ))}
             </div>
             <Link
+<<<<<<< HEAD
               href="/contact?type=provider"
+=======
+              href="/provider-requirements"
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
               className="inline-flex rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
             >
               Become a Provider

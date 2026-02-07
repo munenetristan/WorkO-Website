@@ -30,7 +30,11 @@ export default function ContactPage() {
   return (
     <div className="bg-white">
       <section className="mx-auto w-full max-w-6xl px-6 py-16">
+<<<<<<< HEAD
         <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+=======
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
           <div className="space-y-4">
             <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
               Contact WorkO
@@ -52,6 +56,81 @@ export default function ContactPage() {
                 <li>• Phone: average 5 min</li>
               </ul>
             </div>
+<<<<<<< HEAD
+=======
+            <form className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Full name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@email.com"
+                    className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none"
+                  />
+                </div>
+              </div>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+1 555 111 2020"
+                    className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    I am
+                  </label>
+                  <select
+                    name="type"
+                    className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none"
+                  >
+                    <option>Customer</option>
+                    <option>Provider</option>
+                    <option>Partner</option>
+                  </select>
+                </div>
+              </div>
+              <div className="mt-4">
+                <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  rows={4}
+                  placeholder="Tell us what you need"
+                  className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="mt-4 w-full rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white"
+              >
+                Send message
+              </button>
+              <p className="mt-2 text-xs text-slate-500">
+                Submissions are routed to the WorkO team (email placeholder).
+              </p>
+            </form>
+>>>>>>> origin/codex/create-marketing-website-for-worko-zy11lz
           </div>
           <div className="space-y-4">
             {contactCards.map((card) => (
